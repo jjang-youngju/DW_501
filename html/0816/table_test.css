@@ -1,0 +1,68 @@
+/*    table_test.css   */
+
+/* id가 one을 가진 태그의 하위태그인td에 style적용 */
+#one td{
+    border:1px solid black;
+    width:100px;
+    height:50px;
+}
+#two td{
+    border:3px solid red;
+    width:200px;
+    height:80px;
+}
+#three td{
+    border:1px solid blue;
+    height:30px;
+}
+
+/*    :hover  ->  마우스가 해당위치에 올라와있는상태 */
+#one:hover td{
+    border:3px solid green;
+}
+/* id가one인 태그위에 마우스가 올라오면,
+   해당태그의 하위 태그인 td에 style을 적용하겠다. */
+
+#two:hover{
+    background:pink;
+}
+
+.color{
+    border:1px solid black;
+    width:50px;
+    height:50px;
+}
+.black{
+    background:black;
+    color:white;
+}
+.blue{background:blue;}
+.red{background:red;}
+.green{background:green;}
+.yellow{background:yellow;}
+
+.color_box td{
+    width:30px;
+    height:30px;
+    border:1px solid black;
+}
+
+/* 
+color_box 에  8가지 색상을 표현
+각 칸 마다 서로 다른 색으로 표현
+
+실행순서
+1. 각 칸에 지정할 색 이름 작성
+2. 각 칸에 마우스를  올려주면 배경색으로
+   작성된 색 으로 변경
+   
+*/
+
+
+
+.pink:hover{
+    background:pink;
+}
+.yellow:hover{ background:yellow;}
+.mint:hover{background:mintcream;}
+.sky:hover{background:skyblue;}

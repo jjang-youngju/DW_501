@@ -1,0 +1,53 @@
+/* 0816과제.css */
+
+#note{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#note tr td{
+    border: 1px solid black;
+    width: 120px;
+    height: 50px;
+}
+.log td{
+    text-align: end;
+    padding-right: 50px;
+}
+#note .you{
+    text-align: center;
+    border: 0px;
+}
+#note .dog{
+    background: rgb(0,100,204);
+    color: white;
+}
+dd{
+    margin:auto;
+    padding-bottom: 30px;
+    font-size: 15pt;
+    
+}
+.no{
+    float: left;
+    border: 1px solid black;
+    z-index: 1;
+    width: auto;
+    height: auto;
+}
+.you:hover{
+    background:#999;
+    font-weight: bold;
+}
+dd:hover{
+    background: rgb(178, 235, 244);
+    color: black;
+}
+img:hover{
+    opacity: 0.4;
+}
+.yes{
+    border-bottom: 1px solid black;
+}
+.yes:hover{
+    border: 1px solid black;
+}
