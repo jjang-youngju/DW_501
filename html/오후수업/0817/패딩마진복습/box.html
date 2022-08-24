@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 브라우저 마다 기본적으로 제공되는 margin과 padding값을
+        */
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            padding-left: 10px;
+            padding-top: 20px;
+            margin-right: 100px;
+        }
+        .box1{
+            width: 100px;
+            height: 150px;
+            background: skyblue;
+            margin: 200px 100px;
+        }
+        .test-box{
+            margin-bottom: 20px;
+        }
+        .box2{
+            background: black;
+            width: 200px;
+            height: 400px;
+            margin: 200px 100px;
+        }
+        .b2{
+            background: red;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="안녕하세요">
+    <input type="text" value="안녕하세요~">
+    <h3> div 태그로 margin 알아보기</h3>
+    <div class="box1">
+        <div class="test-box">초코우유</div>
+        <div class="test-box">바나나우유</div>
+    </div>
+    <div class="box2">
+        <div class="b2"></div>
+        <div class="b2"></div>
+        <div class="b2"></div>
+    </div>
+</body>
+</html>

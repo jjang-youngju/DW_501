@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과일가게주문.html</title>
+    <style>
+        #main-box{
+            width: 400px;
+            height: 500px;
+            background: lightgray;
+            margin: 100px auto;
+            padding: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+        select{
+            width: 100%;
+            height: 30px;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            background: navy;
+            color: white;
+        }
+        input[type=number]{
+            width: 97%;
+            height: 30px;
+        }
+        .input-box{
+            margin-bottom: 25px;
+        }
+        button:hover{
+            background: white;
+            color: navy;
+            transition: 1s;
+            border: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main-box">
+        <h2>과일가게 메뉴</h2>
+        <div class="input-box">
+            <select>
+                <option>메뉴를 선택해주세요.</option>
+                <option>수박</option>
+                <option>파인애플</option>
+                <option>바나나</option>
+                <option>사과</option>
+            </select>
+        </div>
+        <div class="input-box">
+            ICED:<input type="radio" name="type">
+            HOT:<input type="radio" name="type">
+        </div>
+        <div class="input-box">
+            L size:<input type="radio" name="size">
+            M size:<input type="radio" name="size">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="수량을 입력해주세요.">
+        </div>
+        <div class="input-box">
+            <!-- cols: 너비조정, rows: 길이조정 -->
+            <textarea cols="52" rows="10">추가 사항이 있으면 적어주세요.</textarea>
+        </div>
+        <div class="input-box">
+            <button>주문하기</button>
+        </div>
+    </div>
+    
+</body>
+</html>

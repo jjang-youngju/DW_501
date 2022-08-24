@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>빽다방 메뉴</title>
+    <style>
+        #main-box{
+            background: lightgray;
+            width: 300px;
+            height: 470px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        .coffee{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        .a{
+            margin-bottom: 20px;
+        }
+        .b{
+            width: 100%;
+            height: 30px;
+        }
+        .c{
+            width: 100%;
+            height: 200px;
+        }
+        .button{
+            width: 100%;
+            height: 30px;
+            background: navy;
+            color: white;
+        }
+        .button:hover{
+            background: #fff;
+            color: navy;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-box">
+        <h2 class="menu">빽다방 메뉴</h2>
+        <select class="coffee">
+            <option>메뉴를 선택해주세요.</option>
+            <option>앗메리카노</option>
+            <option>카페라떼</option>
+            <option>바닐라라떼</option>
+            <option>호떡라떼</option>
+        </select>
+        <div class="a">
+            ICED: <input type="radio">
+            HOT: <input type="radio">
+        </div>
+        <div class="a">
+            L size: <input type="radio">
+            M size: <input type="radio">
+        </div>
+        <div class="a">
+            <input type="text" placeholder="수량을 입력해주세요." class="b">
+        </div>
+        <div class="a">
+            <textarea cols="30" rows="10" placeholder="추가 사항이 있으면 적어주세요!"></textarea>
+        </div>
+        <div class="a">
+            <input type="button" value="주문 완료" class="button">
+        </div>
+    </div>
+</body>
+</html>
