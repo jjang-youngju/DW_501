@@ -1,0 +1,28 @@
+/*login.css*/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: '돋움';
+}
+#login{
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+}
+input{
+    margin-bottom: 10px;
+   border: 2px solid lightgreen;
+   border-radius: 5px;
+   width: 300px;
+   height: 50px;
+}
+input[type=button]{
+    background: lightgreen;
+}
+.join_bt{text-align: right;}
+.join_bt a{
+    text-decoration: none;
+}
