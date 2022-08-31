@@ -1,0 +1,54 @@
+/* mbti과제.css */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#mbti{
+    width: 100%;
+    height: auto;
+}
+.btitle{
+    text-align: center;
+    font-size: 30px;
+}
+.mlist{
+    width: 1500px;
+    height: auto;
+}
+.mlist_t{
+    list-style-type: none;
+    text-align: center;
+    width: 1500px;
+}
+.list_t{
+    line-height: 1.6;
+    background: skyblue;
+}
+.mlist_t div{
+    border: 1px solid black;
+    width: 800px;
+}
+.j{
+    display: flex;
+}
+.mlist_t .count{
+    width: 5%;
+}
+.mlist_t .type{
+    width: 42.5%;
+}
+.mlist_t .check{
+    width: 5%;
+}
+.mlist_t .j{
+    width: 1500px;
+    height: 50px;
+}
+.ctitle{
+    margin-left: 300px;
+    padding-top: 20px;
+}
+li{
+    width: 1500px;
+}
