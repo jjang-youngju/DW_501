@@ -1,0 +1,54 @@
+/* galley_view.css */
+
+/*
+    전체 영역
+    너비 : 600px
+    높이 : auto
+    여백 위 (밖) :100xp
+
+    제목 영역
+    글자크기 : 20px
+
+    이미지 영역
+    이미지 크기 : 최대 너비 600px
+
+    메뉴 영역
+    너비 :80px , 높이 : 30px
+    간격 : 20px
+    배경색  : 검정 , 글자색 : 흰색
+*/
+#view_box{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+#view_wrap{
+    width: 600px;
+    height: auto;
+    margin:0 auto;
+}
+#title{
+    font-size: 20px;
+}
+#image{
+    width: 600px;
+    height: auto;
+}
+#image img{
+    max-width: 600px;
+}
+#bt{
+    width: 300px;
+    display: flex;
+    height: 30px;
+}
+#bt a{
+    width: 80px;
+    height: 30px;
+    margin-right: 20px;
+    background: black;
+    color: white;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+}

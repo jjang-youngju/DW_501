@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> gallery_view.html </title>
+    <link rel="stylesheet" type="text/css" href="galley_view.css">
+
+<script type="text/javascript">
+    //console.log(location.href);
+    //alert(location.href);
+    var url = location.href;
+    var params = url.split('?')[1];
+    params = params.split('&');
+    // params[0] - name = 짱구, params[1] - type = png
+    //alert(params[0]);
+    var img_name = params[0].split('=')[1]; //짱구
+    var img_type = params[1].split('=')[1]; //png
+    var img_title = params[2].split('=')[1]; //짱구
+
+    img_name = decodeURI(img_name);
+    img_title = decodeURI(img_title);
+
+    alert(img_name); //이미지 파일 이름
+    alert(img_type); //이미지 파일 확장자명
+    alert(img_title); //갤러리 제목
+
+    // document - html문서
+    //document.getElementById("title_view");
+    
+</script>
+</head>
+<body>
+    <div id="view_box">
+        <div id="view_wrap">
+            <div id="title">
+                제목 : <b id="title_view"> </b>
+            </div>
+            <div id="image">
+                <img id="image_view">
+            </div>
+            <div id="bt">
+                <a href="image_board.html">목록</a>
+                <a href="">수정</a>
+                <a href="">삭제</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var tview = document.querySelector("#title_view");
+    tview.innerHTML=img_title;
+    var img = document.querySelector("#image_view");
+    //src , id, href , value , name ->속성 (attribute)
+    img.setAttribute("src", img_name +"."+img_type);
+</script>
