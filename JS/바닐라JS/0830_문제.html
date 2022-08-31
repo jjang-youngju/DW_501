@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="box" class="input-box">
+            <input type="text" placeholder="이름입력">
+            <input type="text" placeholder="연락처입력">
+            <input type="text" placeholder="이메일입력">
+            <input type="text" placeholder="주소입력">
+            <input type="text" placeholder="기타사항입력">
+        </div>
+        <button onclick="check()">제출</button>
+    </div>
+</body>
+<script>
+    //문제. 제출 버튼을 눌렀을때 input에 모두 입력이 되어있어야 한다.
+    function check(){
+        var x = document.getElementById('box').children;
+        for(i=0; i<x.length; i++){
+            var inputValue = x[i];
+            console.log(inputValue);
+            if(inputValue.value == ''){
+                alert('값을 입력해주세요');
+                inputValue.focus();
+                return false;
+            }
+        }
+    }
+</script>
+</html>

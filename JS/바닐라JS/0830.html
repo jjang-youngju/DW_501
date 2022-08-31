@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        1.기본연산자
+        2.if/else
+        3.for
+        4.배열
+        5. 메소드
+        6.클래스
+        7.제네릭 컬렉션즈
+        8. spring
+    -->
+    <div id="box" class="input-box">
+        <input type="text" value="안녕">
+        <input type="text" value="디지몬">
+        <input type="text" value="네 꿈을">
+        <input type="text" value="잠이 들래">
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+        <input type="text" value="">
+    </div>
+    <button onclick="check()">확인</button>
+</body>
+<script>
+    function check(){
+        //children : 부모 기준에서 자식태그를 가져옴
+        var x = document.getElementById('box').children;
+        //console.log(x[0]);//첫번째 input을 가져옴
+        //console.log(x[2]);//세번째 input을 출력
+        for(var i=0; i<x.length; i++){//for 시작
+            var inputValue = x[i];
+            console.log(inputValue);
+            if(inputValue.value == ''){
+                alert('입력해주세요~');
+                inputValue.focus();//그쪽 커서 이동
+                return false;
+            }
+        }//for끝
+    }
+
+
+    for(var i=0; i<5; i++){
+        //i가 3이면 "i는 3입니다." console.log로 출력
+        if(i == 3){
+            console.log("i는"+i+"입니다.")
+        }
+    }
+</script>
+</html>
